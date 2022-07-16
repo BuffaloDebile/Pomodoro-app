@@ -6,22 +6,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-        }
-      }
-    }
-  </script>
-
-  <style type="text/tailwindcss">
-    @layer utilities {
-    
-    }
-  </style>
-
   <title>Pomodoro 🍅</title>
   <meta name="description" content="A pomodoro app">
   <meta name="author" content="SitePoint">
@@ -35,8 +19,28 @@
 </head>
 
 <body>
-  <!-- your content here... -->
+  <h1> App Pomodoro 🍅</h1>
 
+  <div class="affichage">
+
+    <div class="bloc travail">
+      <p>Work</p>
+      <p class="affichageT"></p>
+    </div>
+
+    <div class="bloc pause">
+      <p>Repos</p>
+      <p class="affichageP"></p>
+    </div>
+
+  </div>
+
+  <div class="cont-btns">
+    <button class="btn b1">Start</button>
+    <button class="btn b2">Pause</button>
+    <button class="btn b3">Reset</button>
+  </div>
+  <h2></h2>
 
   <script src="app.js"></script>
 </body>
